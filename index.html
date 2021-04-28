@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- ASSIGNMENT RULES
+    - This challenge should be done in couples, go in Eduflow to find who you are paired with
+    - Implement one exercise each, switching side from driver and navigator frequently
+    - We suggest you to use Zoom or Google Hangouts to speak and look at each other throughout the whole activity
+
+    - The exercise must be pushed to the repository and linked on EduFlow by the end of the day
+    - You can google / use StackOverflow BUT we suggest you to use just the material provided
+    - To test the page, open it with your browser and use the inspector.
+    - Use Bootstrap4.6 classes to arrange the page layout and components.
+    - Use containers, rows and cols in order to have a working responsive layout. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <style>
+         .logo{
+             height: 60px;
+             width: 60px;
+         }
+
+
+     </style>
+</head>
+<body>
+    <!-- Ex 1) Implement a navigation bar, connected to all the sections of the page.  -->
+    <!-- Ex 2) Add a logo into the navigation bar (can be any image) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img  src="https://www.causevox.com/wp-content/uploads/2011/05/logo-finished.png"  alt="logo" class ="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+            
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Ex 3) Add a Jumbotron section in which you'll have the name and the claim of the tour operator -->
+
+      <div class="jumbotron">
+        <h1 class="display-4">Shakira and Hasham</h1>
+        <p class="lead"><h2>Tour Operator</h2>
+
+           </p>
+        <hr class="my-4">
+        <p> A large number of tour operators around the world feature the Maltese Islands on their holiday brochures and online portfolios. So if you are planning a trip to Malta, Gozo or Comino, 
+            it may be a good idea to check out what's on offer. Some of the companies listed on this site have been selling the destination for many years and can be considered to be experts in their field. 
+            Others are relatively new to the Malta market and offer a fresh outlook on 
+            what the islands have to offer. Some are general leisure operators, whilst others specialise in a particular activity such as pilgrim tours, student travel, weddings and honeymoons and so on. 
+            To find a touroperator in your area, use our search facility below.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+
+
+      <!-- Ex 4) Implement the "Deal of the Week" section. In this section you'll display 4 destinations.
+         In this section you should have:
+            - 4 destinations per row when the screen is very large
+            - 3 destinations per row when you are on a tablet (or a smaller window)
+            - 2 destinations per row when you are on a small screen
+ -->
+            <div class="container">
+                <div class= "row">
+                    <div class='col-sm-6 col-md-4 col-lg-3'>Jamaica</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>Dubai</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>England</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>U.S.A</div>
+                    <!-- <div class='col-sm-6 col-md-4 col-lg-3'>1</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>2</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>3</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>4</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>1</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>2</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>3</div>
+                    <div class='col-sm-6 col-md-4 col-lg-3'>4</div> -->
+                </div>
+
+            </div>
+
+
+
+
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<!--
+
+
+
+
+
+
+        EXERCISE: 
+        You are implementing a website for a Travel Agency.
+        In the page you will add all the destination you're dreaming to go to in the near future!
+
+
+      
+
+
+
+
+
+
+
+        
+        
+        
+
+        Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+            In this section you should have:
+                - 6 destinations per row when the screen is very large
+                - 3 destinations per row when you are on a tablet (or a smaller window)
+                - 2 destinations per row when you are on a small screen
+        
+        Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description
+
+        Ex 7) Make the "Deal of the day" section disappear on a mobile screens
+        Ex 8) Add to the Welcome Summer destinations section a large shadow
+        Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards
+        Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
+        Ex 11) Create a footer with the company information and a button "Contact Us"
+
+        Ex 11) Create a button next to each section to collapse and reopen the given section
+        Ex 12) Create a method that counts the number of "travels" on the page
+        Ex 13) Create a modal view with a message and a email field
+        Ex 14) When the user clicks on "contact us" the modal is displayed
+        Ex 15) Create a function that adds a "HOT" badge to all the "Welcome Summer" offers
+        Ex 16) Create a function to delete all "cards" from the page
+      -->
