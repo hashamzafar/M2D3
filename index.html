@@ -24,6 +24,21 @@
              width: 60px;
          }
 
+         .bg-image {
+           background-size: cover;
+           height: 100%;
+           width: 100%;
+         }
+
+         .jumbotron-img {
+           background-image: url("https://oceanings.com/wp-content/uploads/2019/06/nassau-FAMILYXMAS0816.jpg");
+           height: 95vh;
+         }
+
+         .pageFooter {
+           background-color: aqua;
+         }
+
 
      </style>
 </head>
@@ -93,6 +108,122 @@
 
             </div>
 
+          </br>
+
+
+            <!-- Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
+            In this section you should have:
+                - 6 destinations per row when the screen is very large
+                - 3 destinations per row when you are on a tablet (or a smaller window)
+                - 2 destinations per row when you are on a small screen -->
+
+
+                <div class="container-fluid bg-image"> 
+                  <div>
+                    <h2 class ="text-center shadow-lg p-3 mb-5 bg-white rounded">WELCOME TO SUMMER!</h2>
+                  </div>
+
+                  
+                  
+
+                  <div class="row">
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="jamaica-holiday.jpeg" alt="jamaica image"> 
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="barcelona-holiday.jpeg" alt="barcelona image">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="newzealand-holiday.jpeg" alt="new zealand image">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="malta-holiday.jpeg" alt="malta image">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="seychelles-holiday.jpeg" alt="seychelles image">
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2 image-responsive">
+                      <img class="img-fluid  fit-image" src="maldives.jpeg" alt="maldives image">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ex 6) Implement a "Deal of the day" section. In this section you'll have:
+            - 66% of the page with a picture of the destination
+            - 33% with Name, dates, price and a short description -->
+
+            <!-- Ex 7) Make the "Deal of the day" section disappear on a mobile screens -->
+
+              
+              <div class="jumbotron jumbotron-img d-xs-none d-sm-none d-md-block d-lg-block">
+                <p class="lead"><h2>DEAL OF THE DAY!</h2>
+        
+                   </p>
+                <hr class="my-4">
+                <p> A large number of tour operators around the world feature the Maltese Islands on their holiday brochures and online portfolios. So if you are planning a trip to Malta, Gozo or Comino, 
+                    it may be a good idea to check out what's on offer. Some of the companies listed on this site have been selling the destination for many years and can be considered to be experts in their field. 
+                    Others are relatively new to the Malta market and offer a fresh outlook on 
+                    what the islands have to offer. Some are general leisure operators, whilst others specialise in a particular activity such as pilgrim tours, student travel, weddings and honeymoons and so on. 
+                    To find a touroperator in your area, use our search facility below.</p>
+              </div>
+<!-- 
+              Ex 8) Add to the Welcome Summer destinations section a large shadow
+              Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards -->
+      
+      
+              <div class="card" style="width: 18rem;">
+                <img src="https://media.gettyimages.com/photos/get-some-summer-in-your-life-picture-id820873998?s=612x612" 
+                class="card-img-top" alt="beach chair">
+                <div class="card-body">
+                  <p class="card-text"><h3>Click Here to see our last minute offers!</h3></p>
+                </div>
+              </div>
+
+              <!-- Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers -->
+
+              <div class="container-fluid my-5">
+                <div class="container">
+                    <h2 class="my-5">/ At Shakira and Hasham we bring the best brices to you!</h2>
+                    <div class="row d-none d-md-flex">
+                        <div class="col-12 col-md-4 col-lg-3 text-center testimonials">
+                            <img src="maldives.jpeg" class="img-fluid" />
+                            <p>Diego</p>
+                            <p>Destination: Maldives</p>
+                            <p>I had a really terrible experience, There were rats everywhere.</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center testimonials">
+                            <img src="jamaica-holiday.jpeg" class="img-fluid" />
+                            <p>Sarah</p>
+                            <p>Destination: Jamaica</p>
+                            <p>It was okay, however there was not many activities to do at night time.</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center testimonials">
+                            <img src="malta-holiday.jpeg" class="img-fluid" />
+                            <p>Felicia</p>
+                            <p>Destination: USA</p>
+                            <p>They did not clean my room!</p>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 text-center testimonials d-md-none d-lg-block">
+                            <!-- d-md-none => From screensize >= md, hide the element
+                            d-lg-block => From screensize >= lg, show the element as block -->
+                            <img src="barcelona-holiday.jpeg" class="img-fluid" />
+                            <p>Karen</p>
+                            <p>Destination: London</p>
+                            <p>I paid for all inclusive and every day there was hair in the food! Disgusting!</p>
+                        </div>
+                    </div>
+
+
+                    <footer class= "pageFooter fixed-bottom">
+                      &copy; 2021 Shakira and Hasham - Contact Information: London to Malta 
+                      
+                    </footer>
+
+
+
+
+
+
 
 
 
@@ -100,6 +231,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </body>
+
 </html>
 
 
@@ -129,20 +261,13 @@
         
         
 
-        Ex 5) Implement the "Welcome Summer" section. In this section you'll propose 6 destinations to your user
-            In this section you should have:
-                - 6 destinations per row when the screen is very large
-                - 3 destinations per row when you are on a tablet (or a smaller window)
-                - 2 destinations per row when you are on a small screen
-        
-        Ex 6) Implement a "Deal of the day" section. In this section you'll have:
-            - 66% of the page with a picture of the destination
-            - 33% with Name, dates, price and a short description
 
-        Ex 7) Make the "Deal of the day" section disappear on a mobile screens
-        Ex 8) Add to the Welcome Summer destinations section a large shadow
-        Ex 9) Create a section Last Minute, in which you'll display the pictures from the destinations as Cards
-        Ex 10) Create a "Testimonial" section, in which the user can find several feedbacks from fake customers
+        
+        
+
+        
+      
+
         Ex 11) Create a footer with the company information and a button "Contact Us"
 
         Ex 11) Create a button next to each section to collapse and reopen the given section
